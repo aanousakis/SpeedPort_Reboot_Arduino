@@ -699,7 +699,6 @@ void loop() {
 
             //read one line from the html page
             String line = client.readStringUntil('\n');
-            Serial.println(line);
 
             if (line.indexOf("_sessionTmpToken = \"") > -1 ){
 
@@ -725,7 +724,6 @@ void loop() {
           }
           else
           {   
-              Serial.println("delayyyyy");
               delay(kNetworkDelay);
           }
       }
